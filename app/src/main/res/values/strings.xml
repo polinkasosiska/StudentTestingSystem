@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Система тестирования</string>
+    <string name="title_activity_course_review">CourseReviewActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tests">Тесты</string>
+    <string name="participants">Участники</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="course_code">Код курса: %s</string>
+    <string name="course_code_hint">Код курса</string>
+    <string name="publish">Опубликовать</string>
+    <string name="course_code_copied">Код курса скопирован</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete_request">Удалить?</string>
+    <string name="appoint_moderator_request">Назначить модератором?</string>
+    <string name="remove_from_moderators_request">Исключить из модераторов?</string>
+    <string name="appoint_moderator">Назначить модератором</string>
+    <string name="remove_from_moderators">Исключить из модераторов</string>
+    <string name="delete">Удалить</string>
+    <string name="assign_correct_answers">Пожалуйста, назначьте правильные ответы</string>
+    <string name="participant_result">%.2f/%d</string>
+    <string name="participant_int_result">%d/%d</string>
+    <string name="question_number">%d / %d</string>
+    <string name="send">Отправить</string>
+    <string name="total_user_result">Ваш результат: %.2f/%d</string>
+    <string name="total_user_result_int">Ваш результат: %d/%d</string>
+    <string name="courses">Курсы</string>
+    <string name="logout">Выйти</string>
+    <string name="logout_request">Выйти?</string>
+    <string name="error_invalid_email">Неверный формат E-mail</string>
+    <string name="error_empty_field">Заполните поле</string>
+    <string name="error_empty_course_name">Ошибка! Введите название курса</string>
+    <string name="error_empty_course_code">Ошибка! Введите код курса</string>
+    <string name="error_empty_answer">Ошибка! Введите ответ</string>
+    <string name="registration">Регистрация</string>
+    <string name="sign_in">Войти</string>
+    <string name="answer_adding">Добавление ответа</string>
+    <string name="input_answer">Введите ответ</string>
+    <string name="input_name">Введите название</string>
+    <string name="results">Результаты:</string>
+    <string name="create_course">Создать курс</string>
+    <string name="join_course">Присоединиться к курсу</string>
+    <string name="next">Далее</string>
+    <string name="input_question">Введите вопрос</string>
+    <string name="save">Сохранить</string>
+    <string name="test_name">Название теста</string>
+    <string name="questions">Вопросы</string>
+    <string name="error_select_answers">Ошибка! Выберите ответы</string>
+    <string name="create">Создать</string>
+    <string name="join">Присоединиться</string>
+    <string name="who_am_i">Кстати, а я кто?</string>
+    <string name="we_remind_you">Напоминаем</string>
+    <string name="user_info">Ваше имя: %s\nВаш E-mail: %s</string>
+    <string name="thanks">Спасибо</string>
+    <string name="max_results">Максимальные результаты</string>
+    <string name="all_results">Все результаты</string>
+
+    <array name="answers_mode">
+        <item>Один из списка</item>
+        <item>Несколько из списка</item>
+    </array>
+</resources>

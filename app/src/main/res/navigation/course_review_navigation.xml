@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_tests">
+
+    <fragment
+        android:id="@+id/navigation_tests"
+        android:name="student.testing.system.presentation.ui.fragments.TestsFragment"
+        tools:layout="@layout/fragment_tests" >
+        <action
+            android:id="@+id/action_navigation_tests_to_testCreationFragment"
+            app:destination="@id/testCreationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/navigate_to_test_passing"
+            app:destination="@id/testPassingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+        </action>
+        <action
+            android:id="@+id/viewResult"
+            app:destination="@id/resultReviewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/viewResults"
+            app:destination="@id/resultsReviewFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="student.testing.system.presentation.ui.fragments.ParticipantsFragment"
+        tools:layout="@layout/fragment_participants" />
+    <fragment
+        android:id="@+id/testCreationFragment"
+        android:name="student.testing.system.presentation.ui.fragments.TestCreationFragment"
+        android:label="test_creation_fragment"
+        tools:layout="@layout/fragment_test_creation" >
+        <action
+            android:id="@+id/action_testCreationFragment_to_questionCreationFragment"
+            app:destination="@id/questionCreationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/questionCreationFragment"
+        android:name="student.testing.system.presentation.ui.fragments.QuestionCreationFragment"
+        android:label="question_creation_fragment"
+        tools:layout="@layout/fragment_question_creation" />
+    <fragment
+        android:id="@+id/testPassingFragment"
+        android:name="student.testing.system.presentation.ui.fragments.TestPassingFragment"
+        android:label="fragment_passing_test"
+        tools:layout="@layout/fragment_passing_test">
+        <argument android:name="test"
+            app:argType="student.testing.system.models.Test"/>
+        <argument android:name="position"
+            app:argType="integer"/>
+        <argument android:name="isUserModerator"
+            app:argType="boolean"/>
+        <action
+            android:id="@+id/action_testPassingFragment_self"
+            app:destination="@id/testPassingFragment"
+            app:popUpTo="@id/testPassingFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/viewResult"
+            app:destination="@id/resultReviewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resultReviewFragment"
+        android:name="student.testing.system.presentation.ui.fragments.ResultReviewFragment"
+        android:label="fragment_result_review"
+        tools:layout="@layout/fragment_result_review">
+        <argument android:name="testResult"
+            app:argType="student.testing.system.models.TestResult"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resultsReviewFragment2"
+        android:name="student.testing.system.presentation.ui.fragments.ResultsReviewFragment"
+        android:label="fragment_results_review"
+        tools:layout="@layout/fragment_results_review">
+        <argument android:name="testId"
+            app:argType="integer"/>
+        <argument android:name="courseId"
+            app:argType="integer"/>
+    </fragment>
+</navigation>
